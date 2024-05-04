@@ -1,6 +1,6 @@
 class Archive(override val name : String) : Storage(name = name, Archive.type)
 {
-    //val listNote : ArrayList<Note> = ArrayList()
+    val listNote : ArrayList<Note> = ArrayList()
 
 
 

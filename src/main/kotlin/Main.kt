@@ -1,5 +1,6 @@
 fun main(args: Array<String>) {
-    val screen1 : Screen<Archive> =  Screen("Архив", null)
+    val menu : Menu = MenuArchive()
+    val screen1 : Screen<Archive> =  Screen( null)
     println("Создать Архив")
     println("Архив 1")
     println("Архив 2")
