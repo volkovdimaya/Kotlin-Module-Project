@@ -1,9 +1,15 @@
 fun main(args: Array<String>) {
-    val menu : Menu = MenuArchive()
-    val screen1 : Screen<Archive> =  Screen( null)
-    println("Создать Архив")
-    println("Архив 1")
-    println("Архив 2")
-    println("Архив 3")
-    println("Выход")
+
+    val listArchive: ArrayList<Archive> = ArrayList()//создаем список архивов
+    val archive = Archive()
+
+    val menu: Ui = Menu<Archive>("Меню Архивов", listArchive, archive)
+    //добавление menu в ui
+
+    val screen = Screen()
+    screen.addUi(menu)
+    screen.start()
+
+    //screen.activeMenu()
+
 }

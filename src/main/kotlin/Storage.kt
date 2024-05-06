@@ -1,7 +1,10 @@
-abstract class Storage(open val name : String, open val type : String) {
-    fun create()
-    {
+abstract class Storage() {
 
-    }
+    abstract val propertyName : ArrayList<String>
+    val propertContent : ArrayList<String> = arrayListOf()
+    abstract fun copy() : Storage
+    var isNew : Boolean = false
+    abstract fun printCreateString() : String
+    abstract fun createUi(): ArrayList<Ui>
+    abstract fun printUi(): ArrayList<Ui>
 }
-//только наследники этого класа

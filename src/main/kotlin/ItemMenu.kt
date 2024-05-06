@@ -1,7 +1,1 @@
-class ItemMenu<T : Storage>(val comьand : Int, val text : String) {
-
-    fun choose(onSuccess: (Screen<T>?) -> Unit)
-    {
-
-    }
-}
+class ItemMenu<T : Storage>(val command: Int, val text: String, val properyUi: ArrayList<Ui>?)
