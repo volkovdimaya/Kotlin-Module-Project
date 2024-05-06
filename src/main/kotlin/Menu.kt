@@ -36,7 +36,7 @@ class Menu<T : Storage>(
 
         }
         //добавляем ui для screen создания контента
-        
+
         addItem(ItemMenu<Storage>(0, storage.printCreateString(), storage.createUi()))
 
         var command = 1
