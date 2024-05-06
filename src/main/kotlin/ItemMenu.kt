@@ -1,0 +1,1 @@
+class ItemMenu<T : Storage>(val command: Int, val text: String, val properyUi: ArrayList<Ui>?)
